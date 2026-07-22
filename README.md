@@ -21,7 +21,7 @@
 </div>
 <br/>
 
-![ProjectPilot AI Home Interface](./public/assets/images/readme-home-ui.png)
+![ProjectPilot AI Home Interface](./public/assets/images/readme-1.jpg)
 
 </div>
 ---
