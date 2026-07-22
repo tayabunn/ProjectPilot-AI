@@ -20,9 +20,10 @@
 
 <br/>
 
-![ProjectPilot AI Home Interface](./public/assets/images/readme-1.jpg)
+![ProjectPilot AI Home Interface](./frontend/public/assets/images/readme/1.jpg)
 
 </div>
+
 ---
 
 ## 📖 Table of Contents
