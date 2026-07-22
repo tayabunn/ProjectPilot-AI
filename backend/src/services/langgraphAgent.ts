@@ -1,6 +1,6 @@
 import { StateGraph, StateGraphArgs } from '@langchain/langgraph';
 import { ChatGoogleGenerativeAI } from '@langchain/google-genai';
-import { SystemMessage } from '@langchain/core/messages';
+import { SystemMessage, HumanMessage } from '@langchain/core/messages';
 
 // Define the Graph state
 export interface GraphState {
@@ -94,7 +94,7 @@ Return a JSON object conforming exactly to this structure:
 }
 Return ONLY valid JSON.`;
 
-  const response = await model.invoke([new SystemMessage(prompt)]);
+  const response = await model.invoke([new HumanMessage(prompt)]);
   let cleanText = response.content as string;
   // Clean potential markdown blocks
   cleanText = cleanText.replace(/```json/g, '').replace(/```/g, '').trim();
@@ -156,7 +156,7 @@ Return a JSON object conforming exactly to this structure:
 }
 Return ONLY valid JSON.`;
 
-  const response = await model.invoke([new SystemMessage(prompt)]);
+  const response = await model.invoke([new HumanMessage(prompt)]);
   let cleanText = response.content as string;
   cleanText = cleanText.replace(/```json/g, '').replace(/```/g, '').trim();
   try {
@@ -206,7 +206,7 @@ Return a JSON object conforming exactly to this structure:
 }
 Return ONLY valid JSON.`;
 
-  const response = await model.invoke([new SystemMessage(prompt)]);
+  const response = await model.invoke([new HumanMessage(prompt)]);
   let cleanText = response.content as string;
   cleanText = cleanText.replace(/```json/g, '').replace(/```/g, '').trim();
   try {
@@ -258,7 +258,7 @@ Return a JSON object conforming exactly to this structure:
 }
 Return ONLY valid JSON.`;
 
-  const response = await model.invoke([new SystemMessage(prompt)]);
+  const response = await model.invoke([new HumanMessage(prompt)]);
   let cleanText = response.content as string;
   cleanText = cleanText.replace(/```json/g, '').replace(/```/g, '').trim();
   try {
