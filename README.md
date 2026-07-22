@@ -18,7 +18,6 @@
 &nbsp;
 [![Vercel](https://img.shields.io/badge/Vercel-Deployed-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
 
-</div>
 <br/>
 
 ![ProjectPilot AI Home Interface](./public/assets/images/readme-1.jpg)
